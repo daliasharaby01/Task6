@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 100%;
+    height: 300px;
+    padding-top: 150px;
+    color: #000;
+    font-size: 30px;
+    background-size: cover;
+   position: relative;
+}
+.div1{
+    background-image: url(imges/1.jpg);
+}
+.p1{
+    animation: moveY 2s infinite linear;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(50% 50%);
+}
+@keyframes moveY{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-50px);
+    }
+    100%{
+        transform:translateY(50px); 
+    }
+}
+    
+.div2{
+    background-image: url(imges/2.jpg);
+}
+.p2{
+    animation: opacity 2s ease-in-out infinite;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(50% 50%);
+}
+@keyframes opacity{
+    0% {
+        opacity: 1;
+}
+    100% {
+        opacity: 0;
+}
+}
+
+.div3{
+    background-image: url(imges/3.jpg);
+}
+.p3{
+     animation:  rotate 2s  infinite linear;
+     position: absolute; 
+     top: 50%;
+    left: 50%;
+    transform: translate(50% 50%);
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+}  
+    0%{
+        transform: rotate(360deg); 
+}
+}
+
+.div4{
+    background-image: url(imges/4.jpg);
+}
+.p4{
+    animation: scales 2s infinite ease-in-out;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(50% 50%);
+}
+@keyframes scales {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
